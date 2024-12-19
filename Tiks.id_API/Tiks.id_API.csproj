@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\poster\a-quiet-place-day-one.jpg" />
+    <None Include="wwwroot\images\poster\argylle.jpg" />
+    <None Include="wwwroot\images\poster\bad-boys-4.jpg" />
+    <None Include="wwwroot\images\poster\beetlejuice-2.jpg" />
+    <None Include="wwwroot\images\poster\cabrini.jpg" />
+    <None Include="wwwroot\images\poster\deadpool-&amp;-wolverine.jpg" />
+    <None Include="wwwroot\images\poster\despicable-me-4.jpeg" />
+    <None Include="wwwroot\images\poster\distant.jpg" />
+    <None Include="wwwroot\images\poster\dreamer.jpg" />
+    <None Include="wwwroot\images\poster\dune-part-two.jpg" />
+    <None Include="wwwroot\images\poster\furiosa.jpg" />
+    <None Include="wwwroot\images\poster\godzilla-x-kong-the-new-empire.jpg" />
+    <None Include="wwwroot\images\poster\horizon-an-american-saga.jpg" />
+    <None Include="wwwroot\images\poster\imaginary.jpg" />
+    <None Include="wwwroot\images\poster\inside-out-2.jpg" />
+    <None Include="wwwroot\images\poster\it-ends-with-us.jpg" />
+    <None Include="wwwroot\images\poster\joker-2.jpg" />
+    <None Include="wwwroot\images\poster\kingdom-of-the-planet-of-the-apes.jpg" />
+    <None Include="wwwroot\images\poster\lift.jpg" />
+    <None Include="wwwroot\images\poster\mean-girls-the-musical.jpg" />
+    <None Include="wwwroot\images\poster\my-ex-friends-wedding.jpg" />
+    <None Include="wwwroot\images\poster\orion-and-the-dark.jpg" />
+    <None Include="wwwroot\images\poster\rebel-moon-part-two.jpg" />
+    <None Include="wwwroot\images\poster\the-book-of-clarence.jpg" />
+    <None Include="wwwroot\images\poster\the-fall-guy.jpg" />
+    <None Include="wwwroot\images\poster\the-garfield-movie.jpg" />
+    <None Include="wwwroot\images\poster\the-watchers.jpg" />
+    <None Include="wwwroot\images\poster\the-wild-robot.jpg" />
+    <None Include="wwwroot\images\poster\transformers-one.jpg" />
+  </ItemGroup>
+
+</Project>
