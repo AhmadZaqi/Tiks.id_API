@@ -15,7 +15,8 @@ namespace Tiks.id_API.Controllers
         {
             var dateNow = DateOnly.FromDateTime(DateTime.Now);
             var timeNow = TimeOnly.FromDateTime(DateTime.Now);
-            var schedule = ctx.Schedules.Where(x => x.MovieId == movieId && x.Date > dateNow && x.Time > timeNow)
+            var startTimeOfDay = TimeOnly.FromDateTime(DateTime.MinValue);
+            var schedule = ctx.Schedules.Where(x => x.MovieId == movieId && x.Date >= dateNow && ((x.Date == dateNow && x.Time >= timeNow) || (x.Date != dateNow && x.Time >= startTimeOfDay)))
                 .GroupBy(x => new { x.TheaterId, x.Theater.Name })
                 .Select(x => new
                 {
